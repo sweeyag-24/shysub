@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myAddition()
+        {
+            var a=parseInt(document.getElementById('subj1').value);
+            var b=parseInt(document.getElementById('subj2').value);
+            var c=parseInt(document.getElementById('subj3').value);
+            if(a+b<c)
+            {
+                alert(c+ ' is the grreatest number');
+            }
+            alert(a+b+c);
+            d=a+b+c;
+            document.getElementById('sum').value=d;
+        }
+    </script>
+</head>
+<body>
+    subj1<input type="text" id="subj1">
+    <br></br>
+    Subj2<input type="text" id="subj2">
+    <br></br>
+    subj3<input type="text" id="subj3">
+    <br></br>
+    sum=<input type="text" id="sum">
+    <input type="button" name="it's a button" value="ADD" onclick="myAddition()">
+</body>
+</html>

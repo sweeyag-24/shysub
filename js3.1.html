@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function calc()
+    {
+
+    
+    var a=parseInt(document.getElementById('n1').value);
+    var b=parseInt(document.getElementById('n2').value);
+    var c=document.getElementById('s').value;
+    var res=0;
+    switch(c)
+    {
+        case '+':
+            alert(res=a+b);
+             break;
+
+        case '-':
+            alert(res=a-b);
+            break;
+
+        case '*':
+            alert(res=a*b);
+                break;
+
+        case '/':
+            alert(res=a/b);
+            break;
+        default:
+            alert('exit');
+
+    }
+    }
+    </script>
+    
+
+</head>
+<body>
+    Enter 1st number:<input type="text" id="n1">
+    <br></br>
+    Enter 2nd number:<input type="text" id="n2">
+    <br></br>
+    Enter sign:<input type="text" id="s">
+    <br></br>
+    <input type="button" name="btn" value="calculate" onclick="return calc()">
+</body>
+</html>

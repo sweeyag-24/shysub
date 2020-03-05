@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function show()
+    {
+        var date=new Date().getDate();
+        var day=new Date().getDay();
+        var year=new Date().getFullYear();
+        var time_h=new Date().getHours();
+        var time_min=new Date().getMinutes();
+        var time_sec=new Date().getSeconds();
+        document.write("Date: "+date+ " /"+day   +year+ "<br>" + "Time: " +time_h +":" +time_min+"/"+time_sec);
+
+    }
+    </script>
+</head>
+<body>
+    <input type="button" name="btn" value="Click to find out what day it is" onclick="return show();">
+</body>
+</html>

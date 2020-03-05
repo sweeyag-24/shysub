@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function testData()
+        {
+            var data=parseInt(document.getElementById("data").value);
+
+            if(isNaN(data))
+            {
+                alert("You entered a number");
+            }
+            else
+            {
+                alert("You have entered a string");
+            }
+        }
+
+        
+    </script>
+</head>
+<body>
+    enter <input type= "text" id="data">
+    <br></br>
+    <input type="button" name="btn" value="check" onclick="testData()" >
+</body>
+</html>
